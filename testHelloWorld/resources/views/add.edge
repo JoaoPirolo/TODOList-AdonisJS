@@ -1,0 +1,13 @@
+@layout('name')
+@section('content')
+<h1 class= "mb-3">New Task</h1>
+<form action="{{ route('/add')}}" method="POST">
+  <div class="mb-3">
+    <label for="">Title</label>
+    <textarea name="body"></textarea>
+    <div class="invalid-feedback">
+      error
+    </div>
+  </div>
+</form>
+@endsection
